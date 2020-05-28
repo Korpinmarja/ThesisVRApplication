@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/VR_Preeria.unity
+    guid: 4477fa54419c47a4d8a2129c60511a9c
+  - enabled: 0
+    path: Assets/Scenes/All_Prefabs.unity
+    guid: 0362ea1ab6f0f2140a89f4bb91e772ce
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e4c06b28093198b48aa8bf48e29aaf33,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fae1f80dc8fc8f84dac736ff6d08afea,
+      type: 2}
