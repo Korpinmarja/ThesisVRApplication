@@ -126,7 +126,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 6e549360d06e073469deb76a2c4f133d,
         type: 3}
       propertyPath: m_Name
-      value: Acorn
+      value: Acorn_Grabbable
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6e549360d06e073469deb76a2c4f133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e549360d06e073469deb76a2c4f133d, type: 3}
