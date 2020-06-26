@@ -61,7 +61,7 @@ namespace LowPolyWater
             return mf;
         }
         
-        void Update()
+        void FixedUpdate()
         {
             GenerateWaves();
         }

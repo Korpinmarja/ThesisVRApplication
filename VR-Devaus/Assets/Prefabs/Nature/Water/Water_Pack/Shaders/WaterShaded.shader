@@ -180,15 +180,16 @@ ENDCG
 
 Subshader
 {
-	Tags {"Queue"="Transparent" "RenderType"="Transparent" }
+	Tags {"RenderType"="Transparent" "Queue"="Transparent" }
 	
 	Lod 500
+	Blend SrcAlpha OneMinusSrcAlpha
 	ColorMask RGB
 	
 	GrabPass { "_RefractionTex" }
 	
 	Pass {
-			Blend SrcAlpha OneMinusSrcAlpha
+			
 			ZTest LEqual
 			ZWrite Off
 			Cull Off
@@ -200,6 +201,7 @@ Subshader
 			#pragma vertex vert
 			#pragma fragment frag
 			#pragma multi_compile_fog
+			
 		
 			#pragma multi_compile WATER_EDGEBLEND_ON WATER_EDGEBLEND_OFF 
 		
