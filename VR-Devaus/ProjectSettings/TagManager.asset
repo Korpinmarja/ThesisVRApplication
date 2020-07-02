@@ -15,12 +15,12 @@ TagManager:
   - 
   - Local Avatar
   - Basket
-  - Basket_mesh
+  - Basket_Collider_For_Acorns
   - Acorns
   - Hands
   - Ground
-  - 
-  - 
+  - Cant_Grab_Acorn
+  - Basket_Collider_For_Ground
   - 
   - 
   - 

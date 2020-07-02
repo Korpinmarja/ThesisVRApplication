@@ -10,8 +10,10 @@ public class SnapObject : MonoBehaviour
     //Reference the game object that the snapped game object will become part of
     public GameObject basket;
 
+    //Check if the object is grabbed by OVRGrabbvable
     public bool grabbed;
 
+    //Check if th object is in basket
     public bool Korijuttuja;
 
 
