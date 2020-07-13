@@ -12,7 +12,42 @@ ModelImporter:
   - first:
       74: -5505715565960345857
     second: Armature.002|Armature.003Action
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarkialaeva1
+    second: {fileID: 2100000, guid: ad7fdfed177445e48b5f4891d3971b6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarkialaeva1.001
+    second: {fileID: 2100000, guid: ad7fdfed177445e48b5f4891d3971b6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarkialaeva2
+    second: {fileID: 2100000, guid: c960f26a878fbfe4390660f8f7e8c49a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarkieva
+    second: {fileID: 2100000, guid: 8ad17213aab7d3d48824caa4844bb619, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarkipyrsto
+    second: {fileID: 2100000, guid: 2bf35885897192c4e8b80b7b6e83a00c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarkisivueva
+    second: {fileID: 2100000, guid: c3c4e36df31675d4e8937d3e6888f13e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarkisivueva.001
+    second: {fileID: 2100000, guid: c3c4e36df31675d4e8937d3e6888f13e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

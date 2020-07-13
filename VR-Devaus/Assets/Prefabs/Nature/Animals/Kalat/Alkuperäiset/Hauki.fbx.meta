@@ -12,7 +12,42 @@ ModelImporter:
   - first:
       74: -7376977406845123523
     second: Armature.001|Armature.003Action
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haukialaeva1
+    second: {fileID: 2100000, guid: 212de7d7df4d3e748ad05d185de96885, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haukialaeva1.001
+    second: {fileID: 2100000, guid: 212de7d7df4d3e748ad05d185de96885, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haukialaeva2
+    second: {fileID: 2100000, guid: 7912e12706e97f34eba7df35998c0f60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haukieva
+    second: {fileID: 2100000, guid: b6a6b0640baa36347b5db130c356b4d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haukipyrsto
+    second: {fileID: 2100000, guid: 0cdb12ff2e46cf54ba644daf47f41f96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haukisivueva
+    second: {fileID: 2100000, guid: 8ed3412ebd2c5f3418af3f2a9fbcc047, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: haukisivueva.001
+    second: {fileID: 2100000, guid: 8ed3412ebd2c5f3418af3f2a9fbcc047, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

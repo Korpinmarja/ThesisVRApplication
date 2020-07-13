@@ -12,7 +12,47 @@ ModelImporter:
   - first:
       74: 8645343760740499401
     second: Armature.003|Armature.003Action
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lohialaeva1
+    second: {fileID: 2100000, guid: fdb4f4bb4db62e84ab6f990064f1fd77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lohialaeva1.001
+    second: {fileID: 2100000, guid: fdb4f4bb4db62e84ab6f990064f1fd77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lohialaeva2
+    second: {fileID: 2100000, guid: a15b22239c52e824fbaef4fce219f396, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lohieva1
+    second: {fileID: 2100000, guid: 48b5aa2948a7e654e98548315fc63a75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lohieva2
+    second: {fileID: 2100000, guid: 4cf68de9d7eb7a24ca6e81ae5730d7ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lohipyrsto
+    second: {fileID: 2100000, guid: bcf267621ad1a5c4e8f1cd77fc52d6f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lohisivueva
+    second: {fileID: 2100000, guid: acc9f96acc98a7c42b211bca463b5855, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lohisivueva.001
+    second: {fileID: 2100000, guid: acc9f96acc98a7c42b211bca463b5855, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

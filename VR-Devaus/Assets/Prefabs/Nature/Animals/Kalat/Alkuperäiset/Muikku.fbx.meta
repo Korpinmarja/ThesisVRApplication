@@ -15,7 +15,47 @@ ModelImporter:
   - first:
       74: -5669740592792570897
     second: Armature.004|Armature.004Action
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muikkualaeva1
+    second: {fileID: 2100000, guid: 0ca20f7ffec6e95439bb704dcb3e36c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muikkualaeva1.001
+    second: {fileID: 2100000, guid: 0ca20f7ffec6e95439bb704dcb3e36c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muikkualaeva2
+    second: {fileID: 2100000, guid: bfe056b306394d146b19f9c1e5ac8267, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muikkueva1
+    second: {fileID: 2100000, guid: cfba5cc9c6f15b542aa2d75b2e674cff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muikkueva2
+    second: {fileID: 2100000, guid: ebef9735d5d0523439ccded3b3c374b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muikkupyrsto
+    second: {fileID: 2100000, guid: e80a740de7568304bb47b6c7afb784ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muikkusivueva.001
+    second: {fileID: 2100000, guid: d02ac2faeab3c8942bcf3a9ede42a4ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muikkusivueva.002
+    second: {fileID: 2100000, guid: d02ac2faeab3c8942bcf3a9ede42a4ed, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

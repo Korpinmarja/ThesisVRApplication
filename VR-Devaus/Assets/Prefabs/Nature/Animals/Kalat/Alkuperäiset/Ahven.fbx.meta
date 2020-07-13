@@ -9,7 +9,52 @@ ModelImporter:
   - first:
       74: 4781951162920444690
     second: Armature|ArmatureAction
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahvenalaeva1
+    second: {fileID: 2100000, guid: df235ad7271892c4d9a03b167ad00fc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahvenalaeva1.001
+    second: {fileID: 2100000, guid: df235ad7271892c4d9a03b167ad00fc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahvenalaeva2
+    second: {fileID: 2100000, guid: 058d8bdc432bfc84e86ecece18a86c24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahvenalaeva2.001
+    second: {fileID: 2100000, guid: 058d8bdc432bfc84e86ecece18a86c24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahveneva1
+    second: {fileID: 2100000, guid: 5aa89059969024648a3cc24ba3116dff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahveneva2
+    second: {fileID: 2100000, guid: 643b62a0a4d6a774d9743a4523b140ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahvenpyrsto
+    second: {fileID: 2100000, guid: 1ef9a2713b635d54fae085dba4cfe3a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahvensivueva
+    second: {fileID: 2100000, guid: a73aceec5f0a46e458fb88141d59cb9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ahvensivueva.001
+    second: {fileID: 2100000, guid: a73aceec5f0a46e458fb88141d59cb9b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
