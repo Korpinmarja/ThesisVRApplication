@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SnapToLocation : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class SnapToLocation : MonoBehaviour
 
     //Numeric variable to count score and scoretext
     public int Score;
-    //public Text ScoreText;
+    public Text ScoreText;
 
 
     //Detects when the Acorn game object has entered snapzone radius
@@ -101,7 +102,7 @@ public class SnapToLocation : MonoBehaviour
     {
         //Adds one to score and changes the text value
         Score++;
-        //ScoreText.text = Score.ToString();
+        ScoreText.text = "Acorns in basket: " + Score.ToString();
     }
 
     void Start()
