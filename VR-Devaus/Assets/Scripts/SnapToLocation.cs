@@ -61,12 +61,10 @@ public class SnapToLocation : MonoBehaviour
     Changes acorns layer so player cant take them out of the basket, 
     without breaking the OVRGrabbable code
     */
-    void SnapObject()
-    {
-    if(Acorn != null && Acorn.GetComponent<AcornTag>() != null)
-        {
-            if(grabbed == false && insideSnapZone == true && korissa == false)
-            {
+    void SnapObject() {
+    if(Acorn != null && Acorn.GetComponent<AcornTag>() != null) {
+            if(grabbed == false && insideSnapZone == true && korissa == false) {
+                
                 korissa = true;
                 i = transform.childCount - 3;
 
@@ -80,6 +78,7 @@ public class SnapToLocation : MonoBehaviour
                     Snapped = true;
                     Acorn.gameObject.layer = 14;
                 }
+
                 else
                 // TODO muuta destroy yhteen spottiin
                 // Adds all other acorns in one position
@@ -94,7 +93,6 @@ public class SnapToLocation : MonoBehaviour
                 }
                 
                 AddScore();
-
             }
         }
     }
