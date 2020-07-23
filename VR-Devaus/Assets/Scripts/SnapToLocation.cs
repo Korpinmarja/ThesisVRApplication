@@ -40,8 +40,6 @@ public class SnapToLocation : MonoBehaviour
         if (Acorn.GetComponent<AcornTag>() != null)
         {
             insideSnapZone = true;
-            //Call snap object script
-            
         }
     }
     //Detects when the Acorn game object has left the snap zone radius
@@ -62,12 +60,17 @@ public class SnapToLocation : MonoBehaviour
     Changes acorns layer so player cant take them out of the basket, 
     without breaking the OVRGrabbable code
     */
-    void SnapObject() {
-    if(Acorn != null && Acorn.GetComponent<AcornTag>() != null) {
-            if(grabbed == false && insideSnapZone == true && korissa == false) {
-                
+    void SnapObject() 
+    {
+        if (Acorn != null && Acorn.GetComponent<AcornTag>() != null) 
+        {
+            grabbed = Acorn.GetComponent<OVRGrabbable>().isGrabbed;
+            korissa = Acorn.GetComponent<SnapObject>().Korijuttuja;
+
+            if (grabbed == false && insideSnapZone == true && korissa == false) 
+            {
                 korissa = true;
-                i = transform.childCount - 3;
+                
 
                 if (i < 3)
                 {
@@ -78,22 +81,21 @@ public class SnapToLocation : MonoBehaviour
 
                     Snapped = true;
                     Acorn.gameObject.layer = 14;
+                    AddScore();
                 }
 
                 else
-                // TODO muuta destroy yhteen spottiin
                 // Adds all other acorns in one position
                 {
                     Acorn.transform.SetParent(transform);
-                    Acorn.gameObject.transform.position = transform.position;
-                    Acorn.gameObject.transform.rotation = transform.rotation;
+                    Acorn.gameObject.transform.position = transform.GetChild(3).position;
+                    Acorn.gameObject.transform.rotation = transform.GetChild(3).rotation;
                     Acorn.GetComponent<Rigidbody>().isKinematic = true;
 
                     Snapped = true;
-                    gameObject.layer = 14;
+                    Acorn.gameObject.layer = 14;
+                    AddScore();
                 }
-                
-                AddScore();
             }
         }
     }
@@ -101,26 +103,22 @@ public class SnapToLocation : MonoBehaviour
     void AddScore()
     {
         //Adds one to score and changes the text value
-        Score++;
-        ScoreText.text = "Acorns in basket: " + Score.ToString();
+        //Score++;
+        i = transform.childCount - 4;
+        ScoreText.text = "Acorns in basket: " + i.ToString()/*Score.ToString()*/;
     }
 
     void Start()
     {
         //position starts at 0
-        i = 0;
+        //i = 0;
         Score = 0;
+        i = transform.childCount - 4;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //set grabbed to equal the boolean valua "isGrabbed"  from OVRGrabbable script
-        if (Acorn != null)
-        {
-            grabbed = Acorn.GetComponent<OVRGrabbable>().isGrabbed;
-            korissa = Acorn.GetComponent<SnapObject>().Korijuttuja;
-        }
         SnapObject();
     }
 }
