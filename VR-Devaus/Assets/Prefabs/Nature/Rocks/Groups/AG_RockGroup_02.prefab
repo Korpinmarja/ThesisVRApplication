@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4873383798019030}
   - component: {fileID: 33634057441983264}
   - component: {fileID: 23287004000696838}
+  - component: {fileID: -110856536740337630}
   m_Layer: 0
   m_Name: AG_RockGroup_02
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &-110856536740337630
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270924573552858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 2d7fbc8e8e8b5e54a9acfe399d1cef71, type: 3}

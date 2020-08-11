@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23526539849456866}
   - component: {fileID: 64764236593543622}
   m_Layer: 0
-  m_Name: Stone_15 Moos
+  m_Name: E_RockGroup_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 367fdae74fc7f4fe9b8db82f6dd8a275, type: 3}
-  - {fileID: 2100002, guid: 367fdae74fc7f4fe9b8db82f6dd8a275, type: 3}
+  - {fileID: 2100000, guid: 367fdae74fc7f4fe9b8db82f6dd8a275, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
