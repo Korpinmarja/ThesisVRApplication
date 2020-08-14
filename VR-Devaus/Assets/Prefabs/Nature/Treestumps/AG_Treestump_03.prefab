@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33086351287632400}
   - component: {fileID: 23558999923989394}
   m_Layer: 0
-  m_Name: stump_3
+  m_Name: AG_Treestump_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714557684316940}
-  m_LocalRotation: {x: 0.08379875, y: -0.8815066, z: -0.23700032, w: 0.39969325}
-  m_LocalPosition: {x: 0.034114182, y: 0.08086249, z: -0.2886996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -20.539001, y: -127.353004, z: -21.105001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &33086351287632400
 MeshFilter:
   m_ObjectHideFlags: 0
