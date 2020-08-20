@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnapObject : MonoBehaviour
+public class Acorn_SnapObject : MonoBehaviour
 {
     //Reference for snapzone collider in use
     public GameObject PickUps;
@@ -11,18 +11,17 @@ public class SnapObject : MonoBehaviour
     public GameObject basket;
 
     //Check if the object is grabbed by OVRGrabbvable
-    public bool grabbed;
+    public bool acorn_grabbed;
 
     //Check if th object is in basket
-    public bool Korijuttuja;
+    public bool Basket_Checker;
 
 
     // Update is called once per frame
     void Update()
     {
         //Set grabbed to equal the boolean value "isGrabbed" from OVRGrabbable script
-        
-        grabbed = GetComponent<OVRGrabbable>().isGrabbed;
+        acorn_grabbed = GetComponent<OVRGrabbable>().isGrabbed;
 
         /*
         //Set objectSnapped equal to the Snapped boolean from Snaplocation
@@ -43,11 +42,10 @@ public class SnapObject : MonoBehaviour
         */
 
         //Makes sure that the object can still be grabbed by OVRGrabbable 
-        
-        if (grabbed == true)
+        if (acorn_grabbed == true)
         {
             transform.SetParent(PickUps.transform);
-            Korijuttuja = false;
+            Basket_Checker = false;
         }
         
     }

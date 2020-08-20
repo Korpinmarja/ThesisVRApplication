@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SnapToLocation : MonoBehaviour
+public class Acorn_SnapToLocation : MonoBehaviour
 {
     //boolean variable used to determine if the player holds the object
     private bool grabbed;
     
     //boolean variable used to hold the code back, so it wont run through too quickly
-    private bool korissa;
+    private bool inBasket;
 
     //returns true when the object is within the SnapZone radius
     private bool insideSnapZone;
@@ -60,16 +60,16 @@ public class SnapToLocation : MonoBehaviour
     Changes acorns layer so player cant take them out of the basket, 
     without breaking the OVRGrabbable code
     */
-    void SnapObject() 
+    void acorn_SnapObject() 
     {
         if (Acorn != null && Acorn.GetComponent<AcornTag>() != null) 
         {
             grabbed = Acorn.GetComponent<OVRGrabbable>().isGrabbed;
-            korissa = Acorn.GetComponent<SnapObject>().Korijuttuja;
+            inBasket = Acorn.GetComponent<Acorn_SnapObject>().Basket_Checker;
 
-            if (grabbed == false && insideSnapZone == true && korissa == false) 
+            if (grabbed == false && insideSnapZone == true && inBasket == false) 
             {
-                korissa = true;
+                inBasket = true;
                 
 
                 if (i < 3)
@@ -105,7 +105,7 @@ public class SnapToLocation : MonoBehaviour
         //Adds one to score and changes the text value
         //Score++;
         i = transform.childCount - 4;
-        ScoreText.text = "Acorns in basket: " + i.ToString()/*Score.ToString()*/;
+        ScoreText.text = "Acorns in basket: " + i.ToString() /*Score.ToString()*/;
     }
 
     void Start()
@@ -119,7 +119,7 @@ public class SnapToLocation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SnapObject();
+        acorn_SnapObject();
     }
 }
 
