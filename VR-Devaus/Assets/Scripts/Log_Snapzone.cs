@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Logs_SnapToLocation : MonoBehaviour
+public class Log_Snapzone : MonoBehaviour
 {
     /*
     TODO 
@@ -12,25 +12,25 @@ public class Logs_SnapToLocation : MonoBehaviour
     */
 
     //boolean variable used to determine if the player holds the object
-    private bool logs_grabbed;
+    //private bool logs_grabbed;
     
     //boolean variable used to hold the code back, so it wont run through too quickly
-    private bool inFirepit;
+    //private bool inFirepit;
 
     //returns true when the object is within the SnapZone radius
-    private bool insideSnapZone_firepit;
+    public bool insideSnapZone_firepit;
 
     //returns true when the object had it's location updated
-    public bool log_Snapped;
+    //public bool log_Snapped;
 
-    //The gameobject that will snap
-    public GameObject Log;
+    //The gameobjects that will snap
+    public GameObject Logs;
 
     //Numeric variable to detect logs spot
-    public int j;
+    //public int j;
 
     //Reference another object to set the rotation
-    public GameObject SnapRotationReference_log;
+    // public GameObject SnapRotationReference_log;
 
 
     //Detects when the Log game object has entered snapzone radius
@@ -38,9 +38,9 @@ public class Logs_SnapToLocation : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //Gives Log the logs tag
-        Log = other.gameObject;
+        Logs = other.gameObject;
 
-        if (Log.GetComponent<LogTag>() != null)
+        if (Logs.GetComponent<LogTag>() != null)
         {
             insideSnapZone_firepit = true;
         }
@@ -49,7 +49,7 @@ public class Logs_SnapToLocation : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         //Log = other.gameObject;
-        if (Log.GetComponent<LogTag>() != null)
+        if (Logs.GetComponent<LogTag>() != null)
         {
             insideSnapZone_firepit = false;
         }
@@ -63,7 +63,8 @@ public class Logs_SnapToLocation : MonoBehaviour
     Changes Logs layer so player cant take them out of the basket, 
     without breaking the OVRGrabbable code
     */
-    void logs_SnapObject() 
+    
+    /*void logs_SnapObject() 
     {
         if (Log != null && Log.GetComponent<LogTag>() != null) 
         {
@@ -101,17 +102,18 @@ public class Logs_SnapToLocation : MonoBehaviour
             }
         }
     }
+    */
 
     void Start()
     {
         //position starts at 0
         //j = 0;
-        j = transform.childCount - 4;
+        // j = transform.childCount - 4;
     }
 
     // Update is called once per frame
     void Update()
     {
-        logs_SnapObject();
+        //logs_SnapObject();
     }
 }

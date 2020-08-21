@@ -71,7 +71,6 @@ public class Acorn_SnapToLocation : MonoBehaviour
             {
                 inBasket = true;
                 
-
                 if (i < 3)
                 {
                     Acorn.transform.SetParent(transform);

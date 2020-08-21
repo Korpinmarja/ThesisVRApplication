@@ -7,11 +7,11 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 4477fa54419c47a4d8a2129c60511a9c
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/All_Prefabs.unity
     guid: 0362ea1ab6f0f2140a89f4bb91e772ce
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PickUp-demo.unity
     guid: 23fe21bd67e354d45b62aa2fc9731b1e
   m_configObjects:
