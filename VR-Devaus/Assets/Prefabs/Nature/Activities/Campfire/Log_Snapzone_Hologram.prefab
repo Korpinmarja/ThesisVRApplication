@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87388d3508859ae40a7efb7c6d70b78a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Snapzone: {fileID: 0}
+  isInsideFirepit: 0
+  log_Snapped: 0
+  Log: {fileID: 0}
+  SnapRotationReference_log: {fileID: 0}
+  NextHologramActivate: {fileID: 0}
 --- !u!1001 &8880329125651137429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66,6 +72,18 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 5528351815fd4c04abf537f22c7e18f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5528351815fd4c04abf537f22c7e18f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5528351815fd4c04abf537f22c7e18f1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5528351815fd4c04abf537f22c7e18f1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5528351815fd4c04abf537f22c7e18f1, type: 3}
       propertyPath: m_Materials.Array.data[0]
