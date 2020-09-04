@@ -37,7 +37,7 @@ public class Log_Snapzone : MonoBehaviour
     // TODO Acorn ja Logien collidereille omat systeemit/nimet etc.? 
     private void OnTriggerEnter(Collider other)
     {
-        //Gives Log the logs tag
+        //Makes logs the other game object that collided
         Logs = other.gameObject;
 
         if (Logs.GetComponent<LogTag>() != null)
