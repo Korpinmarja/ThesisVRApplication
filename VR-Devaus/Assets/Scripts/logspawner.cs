@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+// This code spawns the logs in logpile
+*/
+
 public class logspawner : MonoBehaviour
 {
     //Logs that will spawn

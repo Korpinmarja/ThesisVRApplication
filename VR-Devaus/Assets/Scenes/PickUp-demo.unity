@@ -5620,7 +5620,7 @@ MonoBehaviour:
   - {fileID: 1567801107}
   m_controller: 2
   m_parentTransform: {fileID: 0}
-  m_player: {fileID: 1477802758}
+  m_player: {fileID: 0}
 --- !u!54 &1477802760
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5658,7 +5658,7 @@ MonoBehaviour:
   - {fileID: 1825415317}
   m_controller: 1
   m_parentTransform: {fileID: 0}
-  m_player: {fileID: 1477802758}
+  m_player: {fileID: 0}
 --- !u!54 &1477802762
 Rigidbody:
   m_ObjectHideFlags: 0
