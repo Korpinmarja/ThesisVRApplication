@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PickUps: {fileID: 0}
   basket: {fileID: 0}
-  grabbed: 0
-  Korijuttuja: 0
+  acorn_grabbed: 0
+  Basket_Checker: 0
 --- !u!114 &1470969058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,10 +35,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 446437774, guid: 2e4b01cb4dda4d54fa7e4cbb0c3cd086, type: 3}
+      propertyPath: m_Size.x
+      value: 0.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 446437774, guid: 2e4b01cb4dda4d54fa7e4cbb0c3cd086, type: 3}
+      propertyPath: m_Size.y
+      value: 0.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 446437774, guid: 2e4b01cb4dda4d54fa7e4cbb0c3cd086, type: 3}
+      propertyPath: m_Size.z
+      value: 0.11
+      objectReference: {fileID: 0}
     - target: {fileID: 6651497672926633339, guid: 2e4b01cb4dda4d54fa7e4cbb0c3cd086,
         type: 3}
       propertyPath: m_Name
-      value: Acorn_Grabbable
+      value: Acorn_Grabbable+Snap+Tag
       objectReference: {fileID: 0}
     - target: {fileID: 6651497672926633339, guid: 2e4b01cb4dda4d54fa7e4cbb0c3cd086,
         type: 3}
