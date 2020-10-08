@@ -33,6 +33,6 @@ public class logspawner : MonoBehaviour
     void Start()
     {
         //Starting point to the vector
-        VectorSlicer = new Vector3(0, 3, 0);
+        VectorSlicer = new Vector3(0, 2, 0);
     }
 }

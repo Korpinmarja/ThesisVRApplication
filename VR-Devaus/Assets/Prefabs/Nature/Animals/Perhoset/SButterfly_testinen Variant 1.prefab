@@ -62,10 +62,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6298237552019018284, guid: bc450284ab4aabd4ba9d1118672f3cb6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298237552019018284, guid: bc450284ab4aabd4ba9d1118672f3cb6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298237552019018284, guid: bc450284ab4aabd4ba9d1118672f3cb6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7006629567046115391, guid: bc450284ab4aabd4ba9d1118672f3cb6,
         type: 3}
       propertyPath: m_Name
-      value: SButterfly_testinen
+      value: SButterfly_testinen Variant 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc450284ab4aabd4ba9d1118672f3cb6, type: 3}

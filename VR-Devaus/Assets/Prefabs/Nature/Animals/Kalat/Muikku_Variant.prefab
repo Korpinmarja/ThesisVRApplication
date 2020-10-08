@@ -81,10 +81,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: c4708a2ea4dfa134c9d88f88e4ffe60c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: c4708a2ea4dfa134c9d88f88e4ffe60c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: c4708a2ea4dfa134c9d88f88e4ffe60c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: c4708a2ea4dfa134c9d88f88e4ffe60c,
         type: 3}
       propertyPath: m_Name
-      value: Muikku
+      value: Muikku_Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4708a2ea4dfa134c9d88f88e4ffe60c, type: 3}

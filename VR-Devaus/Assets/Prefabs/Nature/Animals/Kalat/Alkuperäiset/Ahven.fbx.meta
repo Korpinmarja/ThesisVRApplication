@@ -4,56 +4,68 @@ ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
   - first:
-      74: 6700736005108088550
-    second: Armature|Armature.003Action
+      74: -2997889188910615049
+    second: Ahven|AhvenAction
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: -2431147840362307093
+    second: Ahven|ArmatureAction
+  - first:
+      74: 1115434844877256660
+    second: Ahven|Armature|Armature|Armature.003Action|Armature|Armature.003A
+  - first:
+      74: 2667033205322264818
+    second: Ahven|Armature|Armature|Armature.003Action|Armature|Armature.003Actio
+  - first:
+      74: -7880054882907938853
+    second: Ahven|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+  - first:
+      74: -2577736410855392114
+    second: Ahven|Armature|Armature|ArmatureAction|Armature|ArmatureAction.001
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahvenalaeva1
+      name: ahvenalaeva1.002
     second: {fileID: 2100000, guid: df235ad7271892c4d9a03b167ad00fc6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahvenalaeva1.001
+      name: ahvenalaeva1.003
     second: {fileID: 2100000, guid: df235ad7271892c4d9a03b167ad00fc6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahvenalaeva2
+      name: ahvenalaeva2.002
     second: {fileID: 2100000, guid: 058d8bdc432bfc84e86ecece18a86c24, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahvenalaeva2.001
+      name: ahvenalaeva2.003
     second: {fileID: 2100000, guid: 058d8bdc432bfc84e86ecece18a86c24, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahveneva1
+      name: ahveneva1.001
     second: {fileID: 2100000, guid: 5aa89059969024648a3cc24ba3116dff, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahveneva2
+      name: ahveneva2.001
     second: {fileID: 2100000, guid: 643b62a0a4d6a774d9743a4523b140ea, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahvenpyrsto
+      name: ahvenpyrsto.001
     second: {fileID: 2100000, guid: 1ef9a2713b635d54fae085dba4cfe3a0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahvensivueva
+      name: ahvensivueva.002
     second: {fileID: 2100000, guid: a73aceec5f0a46e458fb88141d59cb9b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ahvensivueva.001
+      name: ahvensivueva.003
     second: {fileID: 2100000, guid: a73aceec5f0a46e458fb88141d59cb9b, type: 2}
   materials:
     materialImportMode: 1
@@ -83,8 +95,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Armature.003Action
-      takeName: Armature|Armature.003Action
+      name: Ahven|AhvenAction
+      takeName: Ahven|AhvenAction
       internalID: 0
       firstFrame: 0
       lastFrame: 40
@@ -112,8 +124,124 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|ArmatureAction
-      takeName: Armature|ArmatureAction
+      name: Ahven|ArmatureAction
+      takeName: Ahven|ArmatureAction
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ahven|Armature|Armature|Armature.003Action|Armature|Armature.003A
+      takeName: Ahven|Armature|Armature|Armature.003Action|Armature|Armature.003A
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ahven|Armature|Armature|Armature.003Action|Armature|Armature.003Actio
+      takeName: Ahven|Armature|Armature|Armature.003Action|Armature|Armature.003Actio
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ahven|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+      takeName: Ahven|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ahven|Armature|Armature|ArmatureAction|Armature|ArmatureAction.001
+      takeName: Ahven|Armature|Armature|ArmatureAction|Armature|ArmatureAction.001
       internalID: 0
       firstFrame: 0
       lastFrame: 40
