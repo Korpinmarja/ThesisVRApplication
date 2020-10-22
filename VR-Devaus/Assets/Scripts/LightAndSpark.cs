@@ -22,16 +22,26 @@ public class LightAndSpark : MonoBehaviour
     //Checker to see if the player is in the SparkZone
     public bool AreWeOnRange;
 
+    // Gameobject that check if we are inside the range to try cause spark
     public GameObject Sparkzone;
 
+    // Gameobject that causes the sparkle particle effect
+    public Transform sparkPrefab;
+
+    // Timer that tells how long fire burns
+    private IEnumerator coroutine;
+    public float firetime;
+
+    //public GameObject Reset;
 
     void Start()
     {
         //Starting fire starting tries on zero
         Tries = 0;
+        firetime =10;
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         //Makes Rock the other gameobject that collided
         Rock = other.gameObject;
@@ -43,6 +53,14 @@ public class LightAndSpark : MonoBehaviour
         {
             if (Rock.GetComponent<FireTockTag>() != null && AreWeOnRange==true)
             {
+
+                //ContactPoint contact = other.contacts[0];
+                //Quaternion rot = Quaternion.Vector3.up;
+                //Vector3 pos = contact.point;
+                
+                Instantiate(sparkPrefab, transform.position, Quaternion.identity);
+                //Destroy(gameObject);
+                
                 //MaybyFire takes random number
                 MaybyFire = Random.Range(0, 10);
 
@@ -50,14 +68,27 @@ public class LightAndSpark : MonoBehaviour
                 i = MaybyFire + Tries;
                 
                 //if the number is bigger than 9, the fire starts
-                if (i > 9)
+                if (i > 10)
                 {
                     Fire.SetActive(true);
+                    coroutine = BurningFire(firetime);
+                    StartCoroutine(coroutine);
                 }
 
                 //Adds one to Tries
                 Tries++;
             }
+        }
+    }
+    
+    private IEnumerator BurningFire(float waitTime)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(waitTime);
+            Fire.SetActive(false);
+            //CampfireReset();
+            Tries = 0;
         }
     }
 }

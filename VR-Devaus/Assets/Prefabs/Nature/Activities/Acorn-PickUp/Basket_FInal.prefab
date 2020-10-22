@@ -506,7 +506,7 @@ PrefabInstance:
     - target: {fileID: 1084221900475238843, guid: c95d59ead023e3948a91cb0a29f8b482,
         type: 3}
       propertyPath: m_Name
-      value: Basket
+      value: Basket_FInal
       objectReference: {fileID: 0}
     - target: {fileID: 4130002936980863912, guid: c95d59ead023e3948a91cb0a29f8b482,
         type: 3}
@@ -616,6 +616,11 @@ PrefabInstance:
     - target: {fileID: 7235903234456217760, guid: c95d59ead023e3948a91cb0a29f8b482,
         type: 3}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765085935200928226, guid: c95d59ead023e3948a91cb0a29f8b482,
+        type: 3}
+      propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

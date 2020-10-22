@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/All_Prefabs.unity
     guid: 0362ea1ab6f0f2140a89f4bb91e772ce
   - enabled: 0
-    path: Assets/Scenes/PickUp-demo.unity
+    path: Assets/Scenes/PickUpDemo.unity
     guid: 23fe21bd67e354d45b62aa2fc9731b1e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e4c06b28093198b48aa8bf48e29aaf33,

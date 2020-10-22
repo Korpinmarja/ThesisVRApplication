@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2414734495437939944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4315865576690989898}
+  m_Layer: 0
+  m_Name: LogHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4315865576690989898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414734495437939944}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.29531506, y: -0.2670431, z: -0.4821444}
+  m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1.1111112}
+  m_Children: []
+  m_Father: {fileID: 7930761113766887047}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7930761113766887046
 GameObject:
   m_ObjectHideFlags: 0
@@ -38,6 +68,7 @@ Transform:
   - {fileID: 7926533846758259396}
   - {fileID: 7930761113228820473}
   - {fileID: 7930761114408899021}
+  - {fileID: 4315865576690989898}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -132,6 +163,11 @@ PrefabInstance:
       propertyPath: Snapzone
       value: 
       objectReference: {fileID: 7930761114408899020}
+    - target: {fileID: -97400449696850926, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
+        type: 3}
+      propertyPath: LogHolder
+      value: 
+      objectReference: {fileID: 2414734495437939944}
     - target: {fileID: 8880329125651011861, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -217,6 +253,11 @@ PrefabInstance:
       propertyPath: Snapzone
       value: 
       objectReference: {fileID: 7930761114408899020}
+    - target: {fileID: -97400449696850926, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
+        type: 3}
+      propertyPath: LogHolder
+      value: 
+      objectReference: {fileID: 2414734495437939944}
     - target: {fileID: 8880329125651011861, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -388,6 +429,11 @@ PrefabInstance:
       propertyPath: Snapzone
       value: 
       objectReference: {fileID: 7930761114408899020}
+    - target: {fileID: -97400449696850926, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
+        type: 3}
+      propertyPath: LogHolder
+      value: 
+      objectReference: {fileID: 2414734495437939944}
     - target: {fileID: 8880329125651011861, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -455,15 +501,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ffe7e156d5ccd241b83a7e403e3716c, type: 3}
---- !u!4 &1527561935006116122 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8880329125651011861, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
-    type: 3}
-  m_PrefabInstance: {fileID: 7930761113129021455}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1527561935006283066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8880329125651039541, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7930761113129021455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1527561935006116122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8880329125651011861, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
     type: 3}
   m_PrefabInstance: {fileID: 7930761113129021455}
   m_PrefabAsset: {fileID: 0}
@@ -709,6 +755,11 @@ PrefabInstance:
       propertyPath: Snapzone
       value: 
       objectReference: {fileID: 7930761114408899020}
+    - target: {fileID: -97400449696850926, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
+        type: 3}
+      propertyPath: LogHolder
+      value: 
+      objectReference: {fileID: 2414734495437939944}
     - target: {fileID: 8880329125651011861, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -955,6 +1006,11 @@ PrefabInstance:
       propertyPath: Snapzone
       value: 
       objectReference: {fileID: 7930761114408899020}
+    - target: {fileID: -97400449696850926, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
+        type: 3}
+      propertyPath: LogHolder
+      value: 
+      objectReference: {fileID: 2414734495437939944}
     - target: {fileID: 8880329125651011861, guid: 6ffe7e156d5ccd241b83a7e403e3716c,
         type: 3}
       propertyPath: m_LocalPosition.x

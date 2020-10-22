@@ -26,7 +26,7 @@ public class LightUp_Checker : MonoBehaviour
     {
         if (Player.GetComponent<CharacterController>() != null)
         {
-            insideFireZone = false;
+            //insideFireZone = false;
         }
     }
 }

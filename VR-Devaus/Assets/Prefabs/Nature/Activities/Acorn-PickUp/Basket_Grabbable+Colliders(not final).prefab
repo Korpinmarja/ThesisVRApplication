@@ -403,6 +403,11 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3199484931932443212, guid: c3e689b50a7ee454f8ac023bb7e10cbe,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3992904312025136072, guid: c3e689b50a7ee454f8ac023bb7e10cbe,
         type: 3}
       propertyPath: m_RootOrder
@@ -411,7 +416,7 @@ PrefabInstance:
     - target: {fileID: 6543417709955537429, guid: c3e689b50a7ee454f8ac023bb7e10cbe,
         type: 3}
       propertyPath: m_Name
-      value: Basket_Grabbable+Colliders+Snapzones(not final)
+      value: Basket_Grabbable+Colliders(not final)
       objectReference: {fileID: 0}
     - target: {fileID: 7611695583433231756, guid: c3e689b50a7ee454f8ac023bb7e10cbe,
         type: 3}

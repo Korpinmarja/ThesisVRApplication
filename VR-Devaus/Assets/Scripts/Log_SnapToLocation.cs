@@ -14,6 +14,9 @@ public class Log_SnapToLocation : MonoBehaviour
     //Reference for Log_Snapzone code, gets information from collided object with LogTag
     public GameObject Snapzone;
 
+    //place to hold logs for campfire
+    public GameObject LogHolder;
+
     //Reference for Log_Snapzone code, checker if the object is inside snapzone
     public bool isInsideFirepit;
 
@@ -54,7 +57,7 @@ public class Log_SnapToLocation : MonoBehaviour
             {
                 inFirepit = true;
                 Log.GetComponent<Collider>().enabled = false;
-                Log.transform.SetParent(Snapzone.transform);
+                Log.transform.SetParent(LogHolder.transform);
                 Log.gameObject.transform.position = transform.position;
                 Log.gameObject.transform.rotation = transform.rotation;
                 Log.GetComponent<Rigidbody>().isKinematic = true;
