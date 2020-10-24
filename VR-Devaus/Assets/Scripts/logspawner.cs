@@ -32,7 +32,7 @@ public class logspawner : MonoBehaviour
 
     void Start()
     {
-        //Starting point to the vector
+        //Starting point to the vector //Logs could spawn a little closer to the pile
         VectorSlicer = new Vector3(0, 2, 0);
     }
 }

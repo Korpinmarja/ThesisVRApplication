@@ -33,6 +33,7 @@ public class LightAndSpark : MonoBehaviour
     public float firetime;
 
     //public GameObject Reset;
+    public GameObject Reset;
 
     void Start()
     {
@@ -87,7 +88,7 @@ public class LightAndSpark : MonoBehaviour
         {
             yield return new WaitForSeconds(waitTime);
             Fire.SetActive(false);
-            //CampfireReset();
+            Reset.GetComponent<ResetCampfire>().CampfireReset();
             Tries = 0;
         }
     }
