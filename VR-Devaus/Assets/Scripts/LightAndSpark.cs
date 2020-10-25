@@ -29,8 +29,8 @@ public class LightAndSpark : MonoBehaviour
     public Transform sparkPrefab;
 
     // Timer that tells how long fire burns
-    private IEnumerator coroutine;
-    public float firetime;
+    // private IEnumerator coroutine;
+    // public float firetime;
 
     //public GameObject Reset;
     public GameObject Reset;
@@ -39,7 +39,7 @@ public class LightAndSpark : MonoBehaviour
     {
         //Starting fire starting tries on zero
         Tries = 0;
-        firetime =10;
+        //firetime =10;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -72,8 +72,8 @@ public class LightAndSpark : MonoBehaviour
                 if (i > 10)
                 {
                     Fire.SetActive(true);
-                    coroutine = BurningFire(firetime);
-                    StartCoroutine(coroutine);
+                    //coroutine = BurningFire(firetime);
+                    //StartCoroutine(coroutine);
                 }
 
                 //Adds one to Tries
@@ -81,15 +81,17 @@ public class LightAndSpark : MonoBehaviour
             }
         }
     }
-    
+    /*
     private IEnumerator BurningFire(float waitTime)
     {
         while (true)
         {
             yield return new WaitForSeconds(waitTime);
             Fire.SetActive(false);
+            AreWeOnRange = false;
             Reset.GetComponent<ResetCampfire>().CampfireReset();
             Tries = 0;
+            
         }
-    }
+    } */
 }

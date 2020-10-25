@@ -8,7 +8,7 @@ public class StartGameScript : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().CampfireDemo);
+        StartCoroutine(LoadTheGame());
     }
 
     public void QuitGame()
@@ -16,5 +16,17 @@ public class StartGameScript : MonoBehaviour
         Application.Quit();
     }
 
-    //public static void LoadScene(string CampfireDemo, SceneManagement.LoadSceneMode mode = LoadSceneMode.Single);
+
+    IEnumerator LoadTheGame()
+    {
+        // Loads the Scene in the background as the current Scene still runs
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("CampfireDemo");
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
 }

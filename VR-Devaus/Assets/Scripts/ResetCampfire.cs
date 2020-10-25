@@ -20,7 +20,8 @@ public class ResetCampfire : MonoBehaviour
         {
             GameObject.Destroy(child.gameObject);
         }
-
+        Debug.Log("resetti");
+        
         branch1.SetActive(true);
         branch2.SetActive(false);
         branch3.SetActive(false);

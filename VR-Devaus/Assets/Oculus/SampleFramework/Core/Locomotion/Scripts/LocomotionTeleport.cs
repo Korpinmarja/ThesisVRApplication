@@ -692,7 +692,7 @@ public class LocomotionTeleport : MonoBehaviour
 	/// of moving the player to the teleport destination.
 	/// </summary>
 
-	// Added Gameobject to disable CharacterController during teleportation, because it causes problems like not able to teleport up
+	// Added Gameobject to disable CharacterController during teleportation, because it causes problems like not able to teleport up Jonnan lisäys
 	public GameObject thisGameObject;
 
 	protected IEnumerator TeleportingStateCoroutine()
@@ -700,7 +700,7 @@ public class LocomotionTeleport : MonoBehaviour
 		LogState("TeleportingState: Start");
 
 		// Finds OvrPlayerController and Charactercontroller and put it's value to false
-		thisGameObject = GameObject.Find("OVRPlayerController");;
+		thisGameObject = GameObject.Find("OVRPlayerController");
 		thisGameObject.GetComponent<CharacterController>().enabled = false;
 
 		CurrentState = States.Teleporting;
