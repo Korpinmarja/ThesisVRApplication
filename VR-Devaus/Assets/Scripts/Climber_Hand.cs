@@ -72,13 +72,13 @@ public class Climber_Hand : MonoBehaviour
     
     private void AddPoint(GameObject newObject)
     {
-        if (newObject.CompareTag("ClimberPoint"))
+        if (newObject.CompareTag("ClimbPoint"))
             contactPoints.Add(newObject);
     }
 
     private void RemovePoint(GameObject newObject)
     {
-        if (newObject.CompareTag("ClimberPoint"))
+        if (newObject.CompareTag("ClimbPoint"))
             contactPoints.Remove(newObject);
     }
 
