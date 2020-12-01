@@ -12,6 +12,12 @@ public class PauseGameScript : MonoBehaviour
     // Gameobject to show and hide pause menu screen
     public GameObject PauseMenuUI;
 
+    //Gameobject to show locations menu screen
+    public GameObject LocationsUI;
+
+    //Gameobject to show hints menu screen
+    public GameObject HintsUI;
+
     // Gameobject to give us a laser pointer
     public GameObject LaserPointer;
 
@@ -26,9 +32,16 @@ public class PauseGameScript : MonoBehaviour
     public void Pause()
     {
         DisableTeleport.SetActive(false);
+        
+        //Show all pause menu UI
         PauseMenuUI.SetActive(true);
+        LocationsUI.SetActive(true);
+        HintsUI.SetActive(true);
+        
         PauseLocation();
+        
         LaserPointer.SetActive(true);
+
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
@@ -36,18 +49,31 @@ public class PauseGameScript : MonoBehaviour
     // Return to game and hide pause menu
     public void Resume() 
     {
+        //Hide all pause menu UI
         PauseMenuUI.SetActive(false);
+        LocationsUI.SetActive(false);
+        HintsUI.SetActive(false);
+
         LaserPointer.SetActive(false);
+        
         Time.timeScale = 1f;
         GameIsPaused = false;
+        
         DisableTeleport.SetActive(true);
     }
     
-    // Reload the scene
-    public void Reload()
+    // Reload the Campfire scene
+    /*
+    public void ReloadCampfire()
     {
         StartCoroutine(ReloadTheGame());
     }
+    // Reload the Campfire tutorial
+    public void ReloadTotr()
+    {
+        StartCoroutine(ReloadTheGame());
+    }
+    */
 
     //  Going back to StartScene
     public void GoToStart()
@@ -64,6 +90,7 @@ public class PauseGameScript : MonoBehaviour
 
     
     // Coroutine code for reloading the scene
+    /* not working
     IEnumerator ReloadTheGame()
     {
         // Loads the Scene in the background as the current Scene still runs
@@ -74,7 +101,7 @@ public class PauseGameScript : MonoBehaviour
         {
             yield return null;
         }
-    }
+    } */
 
     // Coroutine code for going back to startscene
     IEnumerator LoadTheStart()
@@ -112,6 +139,5 @@ public class PauseGameScript : MonoBehaviour
             }
         }
     }
-    
 
 }

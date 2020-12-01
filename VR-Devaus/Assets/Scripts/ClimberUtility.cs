@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Utility
+public static class ClimberUtility
 {
     public static GameObject GetNearest(Vector3 origin, List<GameObject> collection)
     {

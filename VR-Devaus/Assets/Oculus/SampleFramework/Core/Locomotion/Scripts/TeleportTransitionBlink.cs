@@ -1,11 +1,9 @@
 /************************************************************************************
-
 See SampleFramework license.txt for license terms.  Unless required by applicable law 
 or agreed to in writing, the sample code is provided “AS IS” WITHOUT WARRANTIES OR 
 CONDITIONS OF ANY KIND, either express or implied.  See the license for specific 
 language governing permissions and limitations under the license.
 help
-
 ************************************************************************************/
 
 using System;
@@ -13,12 +11,10 @@ using UnityEngine;
 using System.Collections;
 
 /// <summary>
-/// This transition will cause the screen to quickly fade to black, perform the repositioning, and then fade 
-/// the view back to normal.
+/// This transition will cause the screen to quickly fade to black, perform the repositioning, and then fade the view back to normal.
 /// </summary>
 public class TeleportTransitionBlink : TeleportTransition
 {
-
 	public OVRScreenFade fader;
 
 	/// <summary>
@@ -42,8 +38,7 @@ public class TeleportTransitionBlink : TeleportTransition
 	public AnimationCurve FadeLevels = new AnimationCurve(new Keyframe[3] { new Keyframe(0,0), new Keyframe(0.5f, 1.0f), new Keyframe(1.0f, 0.0f) });
 	
 	/// <summary>
-	/// When the teleport state is entered, start a coroutine that will handle the
-	/// actual transition effect.
+	/// When the teleport state is entered, start a coroutine that will handle the actual transition effect.
 	/// </summary>
 	protected override void LocomotionTeleportOnEnterStateTeleporting()
 	{
@@ -51,8 +46,7 @@ public class TeleportTransitionBlink : TeleportTransition
 	}
 
 	/// <summary>
-	/// This coroutine will fade out the view, perform the teleport, and then fade the view
-	/// back in.
+	/// This coroutine will fade out the view, perform the teleport, and then fade the view back in.
 	/// </summary>
 	/// <returns></returns>
 	protected IEnumerator BlinkCoroutine()
@@ -75,7 +69,6 @@ public class TeleportTransitionBlink : TeleportTransition
 		}
 
 		fader.SetFadeLevel(0);
-
 		LocomotionTeleport.IsTransitioning = false;
 	}
 }

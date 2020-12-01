@@ -42,7 +42,7 @@ public class Climber_Hand : MonoBehaviour
 
     private void GrapPoint()
     {
-        currentPoint = Utility.GetNearest(transform.position, contactPoints);
+        currentPoint = ClimberUtility.GetNearest(transform.position, contactPoints);
 
         if(currentPoint)
         {

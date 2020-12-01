@@ -11,6 +11,11 @@ public class StartGameScript : MonoBehaviour
         StartCoroutine(LoadTheGame());
     }
 
+    public void StartTutorial()
+    {
+        StartCoroutine(LoadTheTutorial());
+    }
+
     public void QuitGame()
     {
         Application.Quit();
@@ -21,6 +26,18 @@ public class StartGameScript : MonoBehaviour
     {
         // Loads the Scene in the background as the current Scene still runs
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("CampfireDemo");
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    IEnumerator LoadTheTutorial()
+    {
+        // Loads the Scene in the background as the current Scene still runs
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("TutorialScene");
 
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
