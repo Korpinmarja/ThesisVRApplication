@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Climber_Hand : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class Climber_Hand : MonoBehaviour
 
     private GameObject currentPoint = null;
     public List<GameObject> contactPoints = new List<GameObject>();
+
+    //public GameObject CharacterControllerProblem;
+
+    public GameObject CharacterControllerGravity;
     
 
     void Start()
@@ -58,6 +63,14 @@ public class Climber_Hand : MonoBehaviour
         }
 
         currentPoint = null;
+
+        //charactercontroller/gravity enable
+        
+        bool isEmpty = !contactPoints.Any();
+        if(isEmpty) {
+            CharacterControllerGravity.GetComponent<OVRPlayerController>().GravityModifier = 1;
+            //CharacterControllerProblem.GetComponent<CharacterController>().enabled = enabled;
+        } 
     }
 
     private void OnTriggerEnter(Collider other)
@@ -72,8 +85,16 @@ public class Climber_Hand : MonoBehaviour
     
     private void AddPoint(GameObject newObject)
     {
+        // kuinka pistän ovr player controllerin gravityn pois päältä tässä koodissa
+
+        //Jos charactercontroller on ongelma eikä gravity 
+		//CharacterControllerProblem.GetComponent<CharacterController>().enabled = false;
+
+        CharacterControllerGravity.GetComponent<OVRPlayerController>().GravityModifier = 0;
+
         if (newObject.CompareTag("ClimbPoint"))
             contactPoints.Add(newObject);
+            
     }
 
     private void RemovePoint(GameObject newObject)

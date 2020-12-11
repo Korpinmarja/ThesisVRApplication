@@ -18,7 +18,7 @@ public class ActivitiesLocationSpawner : MonoBehaviour
     public GameObject WallClimbingSpawnPoint;
 
     //Gameobject for pausemenu
-    //public GameObject PauseMenu;
+    public GameObject PauseMenu;
 
     //public bool PauseMenuisOn
 
@@ -32,7 +32,7 @@ public class ActivitiesLocationSpawner : MonoBehaviour
         Player.transform.position = AcornPickUpSpawnPoint.transform.position;
         Player.transform.rotation = AcornPickUpSpawnPoint.transform.rotation;
 
-        //PauseMenu.GetComponent<PauseGameScript>().Resume;
+        PauseMenu.GetComponent<PauseGameScript>().Resume();
     }
 
     //Player spawn code for Campfire 
@@ -40,6 +40,8 @@ public class ActivitiesLocationSpawner : MonoBehaviour
     {
         Player.transform.position = CampfireSpawnPoint.transform.position;
         Player.transform.rotation = CampfireSpawnPoint.transform.rotation;
+
+        PauseMenu.GetComponent<PauseGameScript>().Resume();
     }
 
     //Player spawn code for wall climbing
@@ -47,6 +49,8 @@ public class ActivitiesLocationSpawner : MonoBehaviour
     {
         Player.transform.position = WallClimbingSpawnPoint.transform.position;
         Player.transform.rotation = WallClimbingSpawnPoint.transform.rotation;
+
+        PauseMenu.GetComponent<PauseGameScript>().Resume();
     }
 
     

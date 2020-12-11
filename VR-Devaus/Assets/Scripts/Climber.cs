@@ -10,11 +10,11 @@ public class Climber : MonoBehaviour
     private Climber_Hand currentHand = null;
     private CharacterController controller = null;
     
+
     
     
     private void CalculateMovement()
     {
-        // kuinka pistän ovr player controllerin gravityn pois päältä tässä koodissa
 
         Vector3 movement = Vector3.zero;
 
