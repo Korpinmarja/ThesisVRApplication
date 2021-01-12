@@ -7,7 +7,9 @@ public class LightUp_Checker : MonoBehaviour
     //boolean variable to check if the player is inside it or not
     public bool insideFireZone;
 
+    //gameobject for player
     public GameObject Player;
+
 
     //Detects when Player has entered SparkZone radius
     private void OnTriggerEnter(Collider other)

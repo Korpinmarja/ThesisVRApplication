@@ -14,7 +14,7 @@ public class Log_SnapToLocation : MonoBehaviour
     //Reference for Log_Snapzone code, gets information from collided object with LogTag
     public GameObject Snapzone;
 
-    //place to hold logs for campfire
+    //places to hold logs for campfire
     public GameObject LogHolder;
 
     //Reference for Log_Snapzone code, checker if the object is inside snapzone
@@ -30,10 +30,9 @@ public class Log_SnapToLocation : MonoBehaviour
     //Reference another object to set the rotation
     public GameObject SnapRotationReference_log;
 
-    //The gameobject 
+    //The gameobject for holograms
     public GameObject NextHologramActivate;
     
-
     /*
     Checks if the player has released the object and if the object is in
     SnapZone radius. If the both are true, sets the object location and
@@ -57,19 +56,18 @@ public class Log_SnapToLocation : MonoBehaviour
             {
                 inFirepit = true;
                 Log.GetComponent<Collider>().enabled = false;
-                Log.transform.SetParent(LogHolder.transform);
+                Log.transform.SetParent(LogHolder.transform); //changes log gameobjects parent
                 Log.gameObject.transform.position = transform.position;
                 Log.gameObject.transform.rotation = transform.rotation;
                 Log.GetComponent<Rigidbody>().isKinematic = true;
                 
-
                 log_Snapped = true;
-                Log.gameObject.layer = 17;
+                Log.gameObject.layer = 17; //chages logs layer so player can't grab it again
 
                 Snapzone.GetComponent<Log_Snapzone>().Logs = null;
 
                 NextHologramActivate.SetActive(true);
-                transform.gameObject.SetActive(false);
+                transform.gameObject.SetActive(false); //turns off the hologram
             }
         }
     }

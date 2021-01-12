@@ -5,6 +5,16 @@ using System.Linq;
 
 public class Climber_Hand : MonoBehaviour
 {
+    
+    /* 
+    this is just a code from tutorial and tried to use it, it's not working
+    player gameobject has some other gravitymodifiers so player won't go up at all
+    here is links for used video tutorials 
+    Part 1 https://youtu.be/XGdWIeyKmZE?list=PLmU65k4oXBWWIPpFNTmsxPESQ71BFMoAY
+    Part 2 https://youtu.be/qmlMUoN_t2I?list=PLmU65k4oXBWWIPpFNTmsxPESQ71BFMoAY
+    */
+    
+    
     public Climber climber = null;
     public OVRInput.Controller controller = OVRInput.Controller.None;
 
@@ -15,9 +25,8 @@ public class Climber_Hand : MonoBehaviour
     private GameObject currentPoint = null;
     public List<GameObject> contactPoints = new List<GameObject>();
 
-    //public GameObject CharacterControllerProblem;
-
-    public GameObject CharacterControllerGravity;
+    //public GameObject CharacterControllerProblem;  // these are my tries to disable gravity from character controller, these didn't work
+    //public GameObject CharacterControllerGravity;
     
 
     void Start()
@@ -66,11 +75,12 @@ public class Climber_Hand : MonoBehaviour
 
         //charactercontroller/gravity enable
         
+        /*
         bool isEmpty = !contactPoints.Any();
         if(isEmpty) {
             CharacterControllerGravity.GetComponent<OVRPlayerController>().GravityModifier = 1;
             //CharacterControllerProblem.GetComponent<CharacterController>().enabled = enabled;
-        } 
+        } */
     }
 
     private void OnTriggerEnter(Collider other)
@@ -85,12 +95,9 @@ public class Climber_Hand : MonoBehaviour
     
     private void AddPoint(GameObject newObject)
     {
-        // kuinka pistän ovr player controllerin gravityn pois päältä tässä koodissa
 
-        //Jos charactercontroller on ongelma eikä gravity 
 		//CharacterControllerProblem.GetComponent<CharacterController>().enabled = false;
-
-        CharacterControllerGravity.GetComponent<OVRPlayerController>().GravityModifier = 0;
+        //CharacterControllerGravity.GetComponent<OVRPlayerController>().GravityModifier = 0;
 
         if (newObject.CompareTag("ClimbPoint"))
             contactPoints.Add(newObject);

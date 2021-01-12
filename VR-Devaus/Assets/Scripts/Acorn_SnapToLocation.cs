@@ -17,7 +17,7 @@ public class Acorn_SnapToLocation : MonoBehaviour
     //returns true when the object had it's location updated
     public bool Snapped;
 
-    //Spesific part what will snap
+    //Spesific GameObject what will snap
     public GameObject Acorn;
 
     //Numeric variable to detect acorn spot
@@ -26,7 +26,7 @@ public class Acorn_SnapToLocation : MonoBehaviour
     //Reference another object to set the rotation
     public GameObject SnapRotationReference;
 
-    //Numeric variable to count score and scoretext
+    //Numeric variable to count score and change scoretext
     public int Score;
     public Text ScoreText;
 
@@ -64,6 +64,7 @@ public class Acorn_SnapToLocation : MonoBehaviour
     {
         if (Acorn != null && Acorn.GetComponent<AcornTag>() != null) 
         {
+            //Checking other codes
             grabbed = Acorn.GetComponent<OVRGrabbable>().isGrabbed;
             inBasket = Acorn.GetComponent<Acorn_SnapObject>().Basket_Checker;
 
@@ -79,7 +80,7 @@ public class Acorn_SnapToLocation : MonoBehaviour
                     Acorn.GetComponent<Rigidbody>().isKinematic = true;
 
                     Snapped = true;
-                    Acorn.gameObject.layer = 14;
+                    Acorn.gameObject.layer = 14; //Changing layer so player can't grap acorns from basket
                     AddScore();
                 }
 
@@ -92,7 +93,7 @@ public class Acorn_SnapToLocation : MonoBehaviour
                     Acorn.GetComponent<Rigidbody>().isKinematic = true;
 
                     Snapped = true;
-                    Acorn.gameObject.layer = 14;
+                    Acorn.gameObject.layer = 14; //Changing layer so player can't grap acorns from basket
                     AddScore();
                 }
             }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LogsSnapObject : MonoBehaviour
 {
-    //Reference for snapzone collider in use    //what this does???
+    //Reference for snapzone collider in use
     public GameObject Logs_PickUps;
 
     //Reference the game object (Campfire-stuff/Logs) that the snapped game object (log) will become part of
@@ -13,7 +13,7 @@ public class LogsSnapObject : MonoBehaviour
     //Check if the object is grabbed by OVRGrabbvable
     public bool log_grabbed;
 
-    //Check if the object is in basket   //old value Korijuttuja
+    //Check if the object is in basket
     public bool Campfire_Checker;
 
     // Start is called before the first frame update

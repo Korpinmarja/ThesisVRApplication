@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
-// This code spawns the logs in logpile
+    This code spawns logs when player puts left hand inside logpile
 */
 
 public class logspawner : MonoBehaviour

@@ -13,7 +13,7 @@ public class Acorn_SnapObject : MonoBehaviour
     //Check if the object is grabbed by OVRGrabbvable
     public bool acorn_grabbed;
 
-    //Check if th object is in basket
+    //Check if the object is in basket
     public bool Basket_Checker;
 
 
@@ -24,21 +24,9 @@ public class Acorn_SnapObject : MonoBehaviour
         acorn_grabbed = GetComponent<OVRGrabbable>().isGrabbed;
 
         /*
-        //Set objectSnapped equal to the Snapped boolean from Snaplocation
-        objectSnapped = SnapLocation.GetComponent<SnapToLocation>().Snapped;
-        */
-
-        /*
         Sets object Rigidibody to be kinematic after it has been snapped into position
         Sets object to be a parent of the Basket object after it has been snapped
         Sets isSnapped variable true to alert some scripts (not in use atm)
-       
-        if (objectSnapped == true)
-        {
-            GetComponent<Rigidbody>().isKinematic = true;
-            transform.SetParent(basket.transform);
-            //isSnapped = true;
-        }
         */
 
         //Makes sure that the object can still be grabbed by OVRGrabbable 

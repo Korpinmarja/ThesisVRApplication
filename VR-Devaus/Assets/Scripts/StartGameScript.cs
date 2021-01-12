@@ -11,10 +11,12 @@ public class StartGameScript : MonoBehaviour
         StartCoroutine(LoadTheGame());
     }
 
+    /* code for tutorial / tutorial not done
     public void StartTutorial()
     {
         StartCoroutine(LoadTheTutorial());
     }
+    */
 
     public void QuitGame()
     {
@@ -34,6 +36,7 @@ public class StartGameScript : MonoBehaviour
         }
     }
 
+    /*
     IEnumerator LoadTheTutorial()
     {
         // Loads the Scene in the background as the current Scene still runs
@@ -44,6 +47,7 @@ public class StartGameScript : MonoBehaviour
         {
             yield return null;
         }
-    }
-
+    } 
+    */
+    
 }

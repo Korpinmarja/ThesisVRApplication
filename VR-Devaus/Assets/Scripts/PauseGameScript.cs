@@ -9,14 +9,14 @@ public class PauseGameScript : MonoBehaviour
     //boolean value to pause and resume the game
     public static bool GameIsPaused = false;
 
-    // Gameobject to show and hide pause menu screen
+    //Gameobject to show and hide pause menu screen
     public GameObject PauseMenuUI;
 
     //Gameobject to show locations menu screen
     public GameObject LocationsUI;
 
-    //Gameobject to show hints menu screen
-    public GameObject HintsUI;
+    //Gameobject to show hints menu screen / Not in use atm
+    //public GameObject HintsUI;
 
     // Gameobject to give us a laser pointer
     public GameObject LaserPointer;
@@ -24,7 +24,7 @@ public class PauseGameScript : MonoBehaviour
     // Gameobject to disable teleporting when game is paused
     public GameObject DisableTeleport;
 
-    // Gameobject for player to know where we are when paused
+    // Gameobject for player to know where player is when paused
     public GameObject FollowPlayer;
 
     
@@ -36,7 +36,7 @@ public class PauseGameScript : MonoBehaviour
         //Show all pause menu UI
         PauseMenuUI.SetActive(true);
         LocationsUI.SetActive(true);
-        HintsUI.SetActive(true);
+        //HintsUI.SetActive(true);
         
         PauseLocation();
         
@@ -52,7 +52,7 @@ public class PauseGameScript : MonoBehaviour
         //Hide all pause menu UI
         PauseMenuUI.SetActive(false);
         LocationsUI.SetActive(false);
-        HintsUI.SetActive(false);
+        //HintsUI.SetActive(false);
 
         LaserPointer.SetActive(false);
         
@@ -65,11 +65,6 @@ public class PauseGameScript : MonoBehaviour
     // Reload the Campfire scene
     /*
     public void ReloadCampfire()
-    {
-        StartCoroutine(ReloadTheGame());
-    }
-    // Reload the Campfire tutorial
-    public void ReloadTotr()
     {
         StartCoroutine(ReloadTheGame());
     }
@@ -90,7 +85,7 @@ public class PauseGameScript : MonoBehaviour
 
     
     // Coroutine code for reloading the scene
-    /* not working
+    /* this does not work, dont know why
     IEnumerator ReloadTheGame()
     {
         // Loads the Scene in the background as the current Scene still runs
@@ -126,14 +121,14 @@ public class PauseGameScript : MonoBehaviour
 
     void Update() 
     {
-        // Checks if the right Oculus button is pressed to pause or resume the game
+        // Checks if the right Oculus controller button is pressed to pause or resume the game
         if (OVRInput.GetDown(OVRInput.Button.Start))
         {
             if (GameIsPaused == true)
             {
                 Resume();
             }
-            else //if (GameIsPaused == true) for my clarification
+            else
             {
                 Pause();
             }

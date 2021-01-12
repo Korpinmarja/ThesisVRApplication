@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActivitiesLocationSpawner : MonoBehaviour
 {
     
-    // Gameobject for player to move it
+    // Gameobject for player able to move it around
     public GameObject Player;
     
     //Spawnpoint to Acorn pick up
@@ -14,17 +14,14 @@ public class ActivitiesLocationSpawner : MonoBehaviour
     //Spawnpoint to Campfire starting
     public GameObject CampfireSpawnPoint;
 
-    //Spawnpoint to wall climbing
+    //Spawnpoint to wall climbing //not needed atm
     public GameObject WallClimbingSpawnPoint;
 
-    //Gameobject for pausemenu
+    //Gameobject for pausemenu, so we cant turn the pause off once player has been spawned
     public GameObject PauseMenu;
 
-    //public bool PauseMenuisOn
-
-    // kuinka kutsun resumen spawnin jälkeen, koska pause jää teleporttauksen jälkeen päälle
-    // also kuinka teen fade outin, voiko käyttää oculuksen koodia ja muokata siitä oma versio
-
+    //Future ideas
+    // - Fadeout for teleporting, so it wont feel as wierd
 
     //Player spawn code for Acorns pick up
     public void AcornSpawner()
@@ -53,16 +50,4 @@ public class ActivitiesLocationSpawner : MonoBehaviour
         PauseMenu.GetComponent<PauseGameScript>().Resume();
     }
 
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -16,7 +16,7 @@ public class LightAndSpark : MonoBehaviour
     //Random number generetar
     public int MaybyFire;
 
-    //Numeric variable to store MaybyFire and Tries
+    //Variable to store MaybyFire and Tries
     public int i;
     
     //Checker to see if the player is in the SparkZone
@@ -27,19 +27,12 @@ public class LightAndSpark : MonoBehaviour
 
     // Gameobject that causes the sparkle particle effect
     public Transform sparkPrefab;
-
-    // Timer that tells how long fire burns
-    // private IEnumerator coroutine;
-    // public float firetime;
-
-    //public GameObject Reset;
-    public GameObject Reset;
+    
 
     void Start()
     {
         //Starting fire starting tries on zero
         Tries = 0;
-        //firetime =10;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -53,14 +46,8 @@ public class LightAndSpark : MonoBehaviour
         if (AreWeOnRange != null)
         {
             if (Rock.GetComponent<FireTockTag>() != null && AreWeOnRange==true)
-            {
-
-                //ContactPoint contact = other.contacts[0];
-                //Quaternion rot = Quaternion.Vector3.up;
-                //Vector3 pos = contact.point;
-                
+            {   
                 Instantiate(sparkPrefab, transform.position, Quaternion.identity);
-                //Destroy(gameObject);
                 
                 //MaybyFire takes random number
                 MaybyFire = Random.Range(0, 10);
@@ -68,12 +55,10 @@ public class LightAndSpark : MonoBehaviour
                 //Putting MaybyFire number and how many times player have tried to start fire to i variable
                 i = MaybyFire + Tries;
                 
-                //if the number is bigger than 9, the fire starts
+                //if the number is bigger than 9, sets active the fire gameobject
                 if (i > 10)
                 {
                     Fire.SetActive(true);
-                    //coroutine = BurningFire(firetime);
-                    //StartCoroutine(coroutine);
                 }
 
                 //Adds one to Tries
@@ -81,17 +66,4 @@ public class LightAndSpark : MonoBehaviour
             }
         }
     }
-    /*
-    private IEnumerator BurningFire(float waitTime)
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(waitTime);
-            Fire.SetActive(false);
-            AreWeOnRange = false;
-            Reset.GetComponent<ResetCampfire>().CampfireReset();
-            Tries = 0;
-            
-        }
-    } */
 }
