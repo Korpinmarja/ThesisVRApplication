@@ -4,7 +4,7 @@ Rehabilitative virtual reality experience in nature featured with pleasant activ
 Virtual reality application was developed using the Unity game engine and wireless Oculus Quest virtual reality headset.
 
 
-This project was my thesis work. 
+This project was my thesis work.
 Link for my thesis (in finnish): https://www.theseus.fi/handle/10024/504965
 
 
